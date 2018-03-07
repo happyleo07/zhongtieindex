@@ -1,0 +1,361 @@
+    .index_box {
+        background: #ffffff;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .body_left>section {
+        width: 220px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    
+    .body_left>section>a {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+    }
+    
+    .body_left>section.sec1 {
+        background: #83d0f5;
+    }
+    
+    .body_left>section.sec2 {
+        background: #00b9ee;
+    }
+    
+    .body_left>section.sec3 {
+        background: #009fe3;
+    }
+    
+    .body_left>section.sec4 {
+        background: #0069b4;
+    }
+    
+    .body_left>section:hover {
+        opacity: 1;
+    }
+    
+    .body_left>section:hover i {
+        margin-left: 45px;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
+    }
+    /* .body_left>section.cur2 i {
+    margin-left: 32px;
+    transition: all ease-out .3s;
+    -ms-transition: all ease-out .3s;
+    -moz-transition: all ease-out .3s;
+    -webkit-transition: all ease-out .3s;
+    -o-transition: all ease-out .3s;
+} */
+    
+    .body_left>section i {
+        margin-left: 32px;
+        float: left;
+        width: 50px !important;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
+    }
+    
+    .body_left>section.sec1 i {
+        width: 24px;
+        height: 24px;
+        background: url(../img/icon_study.png) no-repeat;
+    }
+    
+    .body_left>section.sec2 i {
+        width: 34px;
+        height: 26px;
+        background: url(../img/icon_cloud.png) no-repeat;
+    }
+    
+    .body_left>section.sec3 i {
+        width: 40px;
+        height: 32px;
+        background: url(../img/icon_user.png) no-repeat;
+    }
+    
+    .body_left>section.sec4 i {
+        width: 28px;
+        height: 32px;
+        background: url(../img/icon_rules.png) no-repeat;
+    }
+    
+    .body_left>section>a>div {
+        float: right;
+        width: 110px;
+    }
+    
+    .body_left>section>a>div h3 {
+        font-size: 22px;
+        color: #ffffff;
+    }
+    
+    .body_left>section>a>div p {
+        color: #ffffff;
+    }
+    /* 右侧列表内容 */
+    
+    .body_right {
+        width: 750px;
+        margin: 20px 0 0 20px;
+        /* background: #e5e5e5; */
+        overflow: hidden;
+    }
+    
+    .body_right article {
+        float: left;
+        width: 360px;
+        min-height: 305px !important;
+    }
+    
+    .body_right article:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    
+    .body_right article {
+        zoom: 1;
+    }
+    
+    .body_right .title {
+        width: 100%;
+        overflow: hidden;
+        height: 45px;
+    }
+    
+    .body_right .title>div {
+        float: left;
+        width: 150px;
+    }
+    
+    .body_right .title>div h3 {
+        font-family: "黑体";
+        font-size: 22px;
+        color: #0069b4;
+    }
+    
+    .body_right .title>div p {
+        font-size: 12px;
+        color: #959595;
+    }
+    
+    .body_right .title a {
+        display: block;
+        float: right;
+        margin-top: 10px;
+    }
+    
+    .body_right article .list,
+    .body_right article .list2 {
+        width: 100%;
+    }
+    
+    .body_right article .list li,
+    .body_right article .list2 li {
+        width: 100%;
+        overflow: hidden;
+        background: url(../img/list_icon.png) no-repeat left;
+        line-height: 26px;
+    }
+    
+    .body_right article .list li a {
+        padding-left: 15px;
+        width: 90%;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    
+    .body_right article .list2 li a {
+        padding-left: 15px;
+        width: 70%;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px;
+        float: left;
+    }
+    
+    .body_right article .list2 li span {
+        float: right;
+        color: #999999;
+        font-size: 14px;
+    }
+    
+    .body_right article .list li a:hover,
+    .body_right article .list2 li a:hover {
+        color: #009fe3;
+        /* text-decoration: underline; */
+        padding-left: 20px;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
+    }
+    
+    .sys {
+        margin: 10px 0 0 30px;
+        float: left;
+        width: 349px;
+        border: 1px solid #83d0f5;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+    }
+    
+    .sys section {
+        width: 174px;
+        float: left;
+    }
+    
+    .sys section>a {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+    }
+    /* .sys section:hover {
+    background: #eaf7fd;
+    width: 174px;
+} */
+    
+    .sys section i {
+        margin-left: 25px;
+        float: left;
+        width: 35px !important;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
+    }
+    
+    .sys section:hover i {
+        margin-left: 30px;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
+    }
+    
+    .sys section.sec1 i {
+        width: 24px;
+        height: 24px;
+        background: url(../img/sliders.png) no-repeat;
+    }
+    
+    .sys section.sec1 {
+        border-right: 1px solid #83d0f5;
+        border-bottom: 1px solid #83d0f5;
+    }
+    
+    .sys section.sec2 i {
+        width: 28px;
+        height: 28px;
+        background: url(../img/icon_mail.png) no-repeat;
+    }
+    
+    .sys section.sec2 {
+        border-bottom: 1px solid #83d0f5;
+    }
+    
+    .sys section.sec3 i {
+        width: 24px;
+        height: 24px;
+        background: url(../img/grid.png) no-repeat;
+    }
+    
+    .sys section.sec3 {
+        border-right: 1px solid #83d0f5;
+    }
+    
+    .sys section.sec4 i {
+        width: 29px;
+        height: 28px;
+        background: url(../img/icon_OA.png) no-repeat;
+    }
+    
+    .sys section>a>div {
+        float: right;
+        /* width: 110px; */
+    }
+    
+    .sys section>a>div h3 {
+        font-size: 14px;
+        color: #0069b4;
+        font-weight: normal;
+    }
+    /* 通知公告高度显示判断 */
+    /* 五条数据 */
+    /* @media screen and (min-width:1024px) and (max-width:1366px) {
+        .body_right article .list2 {
+            height: 130px;
+            overflow: hidden;
+        }
+    } */
+    /* 十条数据 */
+    /* @media screen and (min-width:1367px) and (max-width:1600px) {
+        .body_right article .list2 {
+            height: 260px;
+            overflow: hidden;
+        }
+    } */
+    
+    @media screen and (min-width:1600px) and (max-width:1920px) {
+        /* 右侧四导航高度设置 */
+        .sys section {
+            width: 100% !important;
+            height: 25% !important;
+        }
+        .sys section.sec3 {
+            border-right: none;
+            border-bottom: 1px solid #83d0f5;
+        }
+        .sys section i {
+            margin-left: 100px;
+            float: left;
+            width: 35px !important;
+            transition: all ease-out .3s;
+            -ms-transition: all ease-out .3s;
+            -moz-transition: all ease-out .3s;
+            -webkit-transition: all ease-out .3s;
+            -o-transition: all ease-out .3s;
+        }
+        .sys section:hover i {
+            margin-left: 120px;
+            transition: all ease-out .3s;
+            -ms-transition: all ease-out .3s;
+            -moz-transition: all ease-out .3s;
+            -webkit-transition: all ease-out .3s;
+            -o-transition: all ease-out .3s;
+        }
+        .sys section>a>div h3 {
+            font-size: 22px;
+        }
+    }
