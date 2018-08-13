@@ -111,7 +111,7 @@
     /* 右侧列表内容 */
     
     .body_right {
-        width: 750px;
+        width: 850px;
         margin: 20px 0 0 20px;
         /* background: #e5e5e5; */
         overflow: hidden;
@@ -142,7 +142,7 @@
     
     .body_right .title>div {
         float: left;
-        width: 150px;
+        min-width: 150px;
     }
     
     .body_right .title>div h3 {
@@ -183,6 +183,11 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         font-size: 14px;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
     }
     
     .body_right article .list2 li a {
@@ -194,6 +199,11 @@
         white-space: nowrap;
         font-size: 14px;
         float: left;
+        transition: all ease-out .3s;
+        -ms-transition: all ease-out .3s;
+        -moz-transition: all ease-out .3s;
+        -webkit-transition: all ease-out .3s;
+        -o-transition: all ease-out .3s;
     }
     
     .body_right article .list2 li span {
@@ -207,11 +217,6 @@
         color: #009fe3;
         /* text-decoration: underline; */
         padding-left: 20px;
-        transition: all ease-out .3s;
-        -ms-transition: all ease-out .3s;
-        -moz-transition: all ease-out .3s;
-        -webkit-transition: all ease-out .3s;
-        -o-transition: all ease-out .3s;
     }
     
     .sys {

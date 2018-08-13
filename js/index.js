@@ -4,9 +4,21 @@
     var sh = H - 120 - 40; //网页内容主体高度
     var ssh = sh - 40 - 250 - 40 - 52; //右侧4大按钮总高度
     console.log(ssh);
+    var index_w = $(".index_box").width();
+    console.log(index_w);
+
     // 中间内容区域高度
-    $(".index_box").css({
+    $(".index_box,.slide_box").css({
         "height": sh,
+    });
+    // 侧边栏高度设置
+    $(".slide_box .img_box").css({
+        "height": (sh / 3) - 40
+    });
+    // 侧边栏高度设置
+
+    $(".slide_box #chart11").css({
+        "height": sh - (sh / 3) * 2
     });
     // 左侧四块高度设置
     $(".body_left>section").css({
@@ -30,11 +42,11 @@
     });
     // 高度判断右侧内容出现滚动条
     if (H < 815) {
-        $(".index_box").css({
-            "width": 1030,
-        });
+        // $(".index_box").css({
+        //     "width": 1030,
+        // });
         $(".body_right").css({
-            "width": 790,
+            // "width": index_w - 200 - 330 - 10,
             "overflow-y": 'scroll',
         });
         $(".sys").css({
@@ -45,11 +57,11 @@
         });
     }
     if (H > 816) {
-        $(".index_box").css({
-            "width": 1010,
-        });
+        // $(".index_box").css({
+        //     "width": 1010,
+        // });
         $(".body_right").css({
-            "width": 770,
+            // "width": index_w - 200 - 330 - 10,
             "overflow-y": 'hidden',
         });
     }
@@ -59,9 +71,23 @@
         console.log(H);
         var sh = H - 120 - 40; //网页内容主体高度
         var ssh = sh - 40 - 250 - 40 - 52; //右侧4大按钮总高度
+        var index_w = $(".index_box").width();
         // 中间内容区域高度
-        $(".index_box").css({
+        $(".body_right").css({
+            // "width": 770,
+            "width": index_w - 200 - 330 - 50,
+        });
+        $(".index_box,.slide_box").css({
             "height": sh,
+        });
+        // 侧边栏高度设置
+        $(".slide_box .img_box").css({
+            "height": (sh / 3) - 40
+        });
+        // 侧边栏高度设置
+
+        $(".slide_box #chart11").css({
+            "height": sh - (sh / 3) * 2
         });
         // 左侧四块高度设置
         $(".body_left>section").css({
@@ -85,11 +111,12 @@
         });
         // 高度判断右侧内容出现滚动条
         if (H < 815) {
-            $(".index_box").css({
-                "width": 1030,
-            });
+            // $(".index_box").css({
+            //     "width": 1030,
+            // });
             $(".body_right").css({
-                "width": 790,
+                // "width": 790,
+                "width": index_w - 200 - 330 - 50,
                 "overflow-y": 'scroll',
             });
             $(".sys").css({
@@ -100,11 +127,12 @@
             });
         }
         if (H > 816) {
-            $(".index_box").css({
-                "width": 1010,
-            });
+            // $(".index_box").css({
+            //     "width": 1010,
+            // });
             $(".body_right").css({
-                "width": 770,
+                // "width": 770,
+                "width": index_w - 200 - 330 - 50,
                 "overflow-y": 'hidden',
             });
         }
